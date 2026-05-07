@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ukrainian Candy at the Office</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div>
+                <h1>Taste Ukrainian Candy!</h1>
+                <p class="intro">
+                    You are looking at 12 Ukrainian candies I brought to the office. These are a classic. Common staple for various candy assortments.
+                    Find description, ingredients, and nutrition info below.
+                </p>
+            </div>
+        </header>
+
+        <section class="search-panel">
+            <label class="search-label" for="searchInput">Search candy</label>
+            <input id="searchInput" type="search" placeholder="Search by name or ingredient..."
+                autocomplete="off" />
+            <div id="searchInfo" class="search-info">12 candies available</div>
+        </section>
+
+        <main id="cardsContainer" class="cards-grid" aria-live="polite"></main>
+
+        <div id="detailModal" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal-panel">
+                <div class="modal-header">
+                    <button id="modalCloseBtn" class="modal-close" aria-label="Close details">x</button>
+                </div>
+                <div id="modalContent" class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
